@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+
+    <meta name="description" content=".">    <title>404</title>  
+
+
+<style>
+body {
+	margin: 0px;
+}
+.test {
+	display: inline-block;
+	font-family: courier;
+	font-size: 20px;
+	line-height: 20px;
+	height: 20px;
+	position: absolute;
+	opacity: 0;
+}
+.border404 {
+	position: absolute;
+	left: calc(50% - (var(--r) * var(--a) * var(--x) + 2 * var(--x) * var(--r))/2 );
+	top: calc(50% - (2 * var(--x) + var(--b) * var(--x))/2 );
+	width: calc(var(--r) * var(--a) * var(--x) + 2 * var(--x) * var(--r));
+	height: calc(2 * var(--x) + var(--b) * var(--x));
+}
+.top {
+
+	font-family: courier;
+	font-size: var(--x);
+	line-height: var(--x);
+	height: calc(2 * var(--x));
+	width: calc(var(--r) * var(--a) * var(--x));
+	display: inline-block;
+}
+.bottom {
+	
+	font-family: courier;
+	font-size: var(--x);
+	line-height: var(--x);
+	height: calc(2 * var(--x));
+	width: calc(var(--r) * var(--a) * var(--x));
+	display: inline-block;
+	position: absolute;
+	top: calc(var(--b) * var(--x));
+	left: calc(2 * var(--x) * var(--r));
+}
+.right {
+
+	font-family: courier;
+	font-size: var(--x);
+	line-height: var(--x);
+	position: absolute;
+	top: 0px;
+	left: calc(var(--r) * var(--a) * var(--x));
+	width: calc(2 * var(--x) * var(--r));
+}
+.left {
+
+	font-family: courier;
+	font-size: var(--x);
+	line-height: var(--x);
+	position: absolute;
+	top: calc(2 * var(--x));
+	left: 0px;
+	width: calc(2 * var(--x) * var(--r));
+}
+
+.container {
+	position: absolute;
+	border: 1px solid red;
+	padding: 1rem;
+	top: calc(4 * var(--x));
+	left: calc(50% - 40ch);
+	width: 80ch;
+}
+button {
+	border: 1px solid black;
+	padding: 0.5rem 1rem;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+#message {
+	display: none;
+}
+#game {
+	display: none;
+}
+</style>
+
+</head>
+<body onresize="resizePage()">
+<div class="border404">
+	<div class="test">4040404040</div>
+	<div class="top"></div>
+	<div class="right"></div>
+	<div class="bottom"></div>
+	<div class="left"></div>
+</div>
+
+<div class="container">
+	<div style="padding-bottom: 1rem; border-bottom: 1px solid red; font-size: 2rem; font-weight: bold;">
+		<center>URL not found.</center>
+	</div>
+	<h3>Do you want to return to the home page?</h3>
+	<button onclick="window.location.href='./'">Yes</button><button onclick="clickNo()">No</button>
+	<div id="message">
+		Okay. Stay as long as you like!
+	</div>
+	<div id="game">
+		<input type="text" id="input" />
+		<div>Distance: <span id="distance">0</span> AU</div>
+		<div>Your velocity: <span id="velocity">0 km/s</span></div>
+		<div>Velocity in Earth time: <span id="velocityEarth">0 km/s</span></div>
+		<div>Time ratio: <span id="timeRatio">1</span></div>
+		<div>Your time elapsed: <span id="timeYou">0 s</span></div>
+		<div>Time elapsed on Earth: <span id="timeEarth">0 s</span></div>
+		<div>Your current time: <span id="timeYouCurrent">0 s</span></div>
+		<div>Current time on Earth: <span id="timeEarthCurrent">0 s</span></div>
+		
+	</div>
+	
+	
+</div>
+
+
+
+<script>
+
+function resizePage(){
+	var lw = document.querySelector('.test').getBoundingClientRect();
+
+	var r = lw.width/200;
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+	var x = (w/r+h)/105;
+	var a = Math.round(w/(x*r)-2);
+	var b = 101-a;
+	var x = Math.floor(Math.min(w/r/(a+2),h/(b+2)));
+	console.log(a,b)
+	var borderEl = document.querySelector('.border404');
+	borderEl.style.setProperty('--a',a);
+	borderEl.style.setProperty('--b',b);
+	borderEl.style.setProperty('--x',x+"px");
+	document.querySelector('.container').style.setProperty('--x',x+"px");
+	borderEl.style.setProperty('--r',r);
+	
+	var topEl = document.querySelector('.top');
+	var bottomEl = document.querySelector('.bottom');
+	topEl.innerHTML = "";
+	bottomEl.innerHTML = "";
+	for (var ii=0;ii<2;ii++){
+		for (var i=0;i<a;i++){
+			if ((i+ii) % 2 == 0){
+				topEl.innerHTML += "4";
+				if (b % 2 == 1){
+					bottomEl.innerHTML += "0";
+				}
+				else {
+					bottomEl.innerHTML += "4";
+				}
+			}
+			else {
+				topEl.innerHTML += "0";
+				if (b % 2 == 1){
+					bottomEl.innerHTML += "4";
+				}
+				else {
+					bottomEl.innerHTML += "0";
+				}
+			}
+		}
+		if (ii < 2){
+			topEl.innerHTML += "<br />";
+			bottomEl.innerHTML += "<br />";
+		}
+	}
+	var rightEl = document.querySelector('.right');
+	var leftEl = document.querySelector('.left');
+	rightEl.innerHTML = "";
+	leftEl.innerHTML = "";
+	for (var i=0;i<b;i++){
+		if ((a +i) % 2 == 0){
+			rightEl.innerHTML += "40<br />";
+		}
+		else {
+			rightEl.innerHTML += "04<br />";
+		}
+		if (i % 2 == 0){
+			leftEl.innerHTML += "40<br />";
+		}
+		else {
+			leftEl.innerHTML += "04<br />";
+		}
+	}
+}
+resizePage();
+
+
+
+var el = document.getElementById('input');
+var elV = document.getElementById('velocity');
+var elVE = document.getElementById('velocityEarth');
+var elD = document.getElementById('distance');
+var elTR = document.getElementById('timeRatio');
+var elTY = document.getElementById('timeYou');
+var elTE = document.getElementById('timeEarth');
+var elTYC = document.getElementById('timeYouCurrent');
+var elTEC = document.getElementById('timeEarthCurrent');
+el.addEventListener('keydown',addEnergy);
+//var c = 3*Math.pow(10,8);//m/s
+//var m = 3*Math.pow(10,-15);//kg mass of human genome
+var mcc = 27*Math.pow(10,1);
+
+var ke = 0;
+var d = 0;
+var vp = 0;
+var v = 0;
+var lastTime = 0;
+var totalTime = 0;
+var totalTimeEarth = 0;
+var idx = 0;
+
+if (window.localStorage.getItem('d') || window.localStorage.getItem('ke')){
+	if (window.localStorage.getItem('d')){
+		d = parseFloat(window.localStorage.getItem('d'));
+	}
+	if (window.localStorage.getItem('ke')){
+		ke = parseFloat(window.localStorage.getItem('ke'));
+	}
+	lastTime = Date.now();
+	if (window.localStorage.getItem('lt')){
+		lastTime = parseFloat(window.localStorage.getItem('lt'));
+	}
+	if (window.localStorage.getItem('tt')){
+		totalTime = parseFloat(window.localStorage.getItem('tt'));
+	}
+	if (window.localStorage.getItem('tte')){
+		totalTimeEarth = parseFloat(window.localStorage.getItem('tte'));
+	}
+	console.log(d,ke,lastTime,totalTime);
+	vp = Math.pow(1-Math.pow(mcc/(ke+mcc),2),0.5);
+	v = vp*300000;//km/s
+	
+	requestAnimationFrame(moveShip);
+}
+
+function addEnergy(){
+	if (ke == 0){
+		ke += 0.01;//0.0025kgm^2/s^2 is normal
+		vp = Math.pow(1-Math.pow(mcc/(ke+mcc),2),0.5);
+		v = vp*300000;//km/s
+		lastTime = Date.now();
+		requestAnimationFrame(moveShip);
+		
+	}
+	else {	
+		ke += 0.01;
+		vp = Math.pow(1-Math.pow(mcc/(ke+mcc),2),0.5);
+		v = vp*300000;//km/s
+		
+		el.value = "";
+		
+	}
+}
+
+function moveShip(){
+	requestAnimationFrame(moveShip);
+	
+	if (idx % 10 == 0){
+		var newTime = Date.now();
+		var tr = Math.pow(1-vp*vp,0.5);
+		d += v*(newTime-lastTime)/1000/tr;//km
+		totalTime += newTime-lastTime;//ms
+		totalTimeEarth += (newTime-lastTime)/tr;//ms
+		lastTime = newTime;
+		var microAU = Math.round(d/1.496/100000000*1000000);
+		if (microAU < 10000){
+			elD.textContent = Math.round(d/1.496/100000000*1000000)/1000000;//AU
+		}
+		else if (microAU < 1000000){
+			elD.textContent = Math.round(d/1.496/100000000*10000)/10000;//AU
+		}
+		else {
+			elD.textContent = Math.round(d/1.496/100000000*100)/100;//AU
+		}
+		elV.textContent = Math.round(v/tr)+" km/s";
+		elVE.textContent = Math.round(v)+" km/s";
+	
+		elTR.textContent = Math.round(tr*100000)/100000;
+		elTY.textContent = Math.round(totalTime/1000)+" s";
+		elTE.textContent = Math.round(totalTimeEarth/1000)+" s";
+		var dd = new Date(newTime);
+		elTYC.textContent = dd;
+		dd = new Date(newTime+totalTimeEarth-totalTime);
+		elTEC.textContent = dd;
+	}
+	//TODO: Show current times here and on earth
+	if (idx % 100 == 0){
+		window.localStorage.setItem('ke',ke);
+		window.localStorage.setItem('d',d);
+		window.localStorage.setItem('lt',lastTime);
+		window.localStorage.setItem('tt',totalTime);
+		window.localStorage.setItem('tte',totalTimeEarth);
+	}
+	
+	idx++;
+}
+
+function clickNo(){
+	document.getElementById("message").style.display = "block";
+	clickPlay();
+}
+function clickPlay(){
+	document.getElementById("message").textContent = `Start typing in the input box. Each keypress generates a bit (2.5 mJ) of energy. What if that energy was used to power a very lightweight spacecraft?
+	A human genome weighs about 3x10^-15 kg. See how far your genome could travel simply from the energy of pressing buttons repeatedly. As your genome goes faster, relativity means that time will be different on Earth. If the math is wrong then assume this game is set in an alternate universe where the math is correct.`;
+	document.getElementById("game").style.display = "block";
+}
+
+
+var dd = new Date(1635790360000);
+
+</script>
+
+</body>
+</html>
+
+
