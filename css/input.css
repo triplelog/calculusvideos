@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+	
+}
+.hover-visible:hover {
+	overflow: visible;
+	z-index: 100;
+}
+
+.titleLink {
+	color: blue;
+	text-decoration:underline;
+}
+.titleLink:hover {
+	color: rgb(0,0,200);
+	cursor: pointer;
+}
+
+.overflowDescription {
+	overflow: visible;
+	z-index: 1000;
+}
+.overflowDescription > div:nth-child(1) {
+	max-height: unset;
+}
+.overflowDescription > div:nth-child(2) {
+	border: 1px solid black;
+	padding: 0.5rem;
+}
+
+.awesomplete {
+	width: 100%;
+}
+.awesomplete > input {
+	width: 100%;
+}

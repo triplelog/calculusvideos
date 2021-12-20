@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculus Videos</title>
+  <meta name="description" content="Search for videos about calculus."/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png"> 
+  <link href="./css/awesomplete.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+
+
+
+</head>
+<body >
+<header class="bg-gray-100 border-b sm:fixed sm:w-full sm:top-0 sm:left-0 sm:z-40 sm:h-10">
+	<div class="container px-2 py-2 mx-auto">
+		<a href="./index.html"><img style="display:inline-block;" class="sm:w-48" src="./img/logo.png" alt="Calculus Videos Logo" /></a>
+		<button class="float-right mx-0 border border-black px-2 bg-green-100 text-black"><a href="./help.html">Help</a></button>
+		<button class="float-right mx-1 border border-black px-2 bg-yellow-100 text-black"><a href="./playlist.html">Playlists</a></button>
+    </div>
+</header>
+
+<main class="flex-1 sm:mt-12">
+	<div class="container mx-auto">
+		<div class="w-full ">
+			<div class="relative mx-auto w-full">
+				<div class="border-b w-full">
+				  <input id="search" class="border-2 border-black transition h-12 px-5 pr-16 focus:outline-none w-full text-black text-lg " type="search" name="search" placeholder="Search" />
+				  
+				</div>
+				<div class="bg-gray-200 w-full py-1 px-2 flex gap-2">
+					<div class="flex-none">
+						Filters:
+						<select id="filterKey">
+							<option value="classes">Class</option>
+							<option value="source">Source</option>
+							<option value="topics">Topic</option>
+							<option value="length">Length</option>
+							<option value="caption">Captions</option>
+							<option value="type">Type</option>
+						
+						</select>
+						<select id="filterComp">
+							<option value="eq">=</option>
+							<option value="neq">!=</option>
+							<option value="leq" disabled><=</option>
+							<option value="geq" disabled>>=</option>
+						</select>
+					</div>
+					<div class="flex-grow">
+						<input id="filterValue" class="border-1 border-primary transition h-6 focus:outline-none text-black " data-multiple />
+					</div>
+					<div class="flex-none">
+						<button onclick="addFilter()" class="border border-black px-2 bg-green-100 hover:bg-green-200">Add</button>
+						<button id="hideF" onclick="shFilters()" class="border border-black px-2 bg-yellow-100 hover:bg-yellow-200">Hide</button>
+					</div>
+				</div>
+				<div id="filters" class="bg-gray-100 w-full">
+				</div>
+			</div>
+		</div>
+		<div id="browse" class="w-full flex">
+			<div class="w-1/2 mt-2">
+			<object class="w-full" data="./img/internet.svg" type="image/svg+xml"></object>
+
+			</div>
+			<div class="w-1/2 mt-2">
+				<h1 class="text-3xl md:text-5xl text-center">Features</h1>
+				<div class="mt-2">
+					<ul class="ml-8 list-disc list-outside">
+						<li>Search the internet for Calculus videos.</li>
+						<li>Filter videos based on topics, class, video length, and/or source.</li>
+						<li>Easily create playlists to embed on your site.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="results" class="w-full border-b pt-4" style="display: none;">
+			
+		</div>
+		<template id="result">
+				<div class="resultDiv w-full flex my-4 bg-gray-200 border border-black">
+					<a name="link" href="" class="w-1/4 max-h-36 overflow-hidden hover-visible"><img name="thumb" src="" class="w-full"/></a>
+					<div class="w-1/2 border-b max-h-36 overflow-hidden px-2">
+						<div class="w-full max-h-12 overflow-hidden">
+							<a name="link" href="" class="titleLink"><b name="title">Title</b></a>
+						</div>
+						<div name="desClick" class="w-full bg-gray-200">
+							<span name="description" class="text-sm break-words">Description</span>
+						</div>
+					</div>
+					<div class="w-1/4 border-b max-h-36 overflow-auto px-2">
+						<div class="w-full">
+							<button style="display:none;" class="border border-black px-2 bg-green-100" onclick="addToPlaylist()" name="mid"></button>
+							<div name="source"><span class="titleLink"></span></div>
+							<div>Time: <span name="length"></span>, Cap: <span name="cap">N</span></div>
+							<!--<div><span name="score"></span></div>-->
+							<div><span name="class"></span></div>
+							<div><span name="topics"></span></div>
+							<div><span name="release"></span></div>
+							<div><span name="type"></span></div>
+								
+							
+						</div>
+					</div>
+				</div>
+				
+		</template>
+		<template id="filter">
+			<div data-id="" name="filter" class="w-full my-4">
+				<button class="mr-4">X</button>
+				<span>Filter</span>
+				
+			</div>
+		</template>
+    </div>
+</main>        
+
+
+<script src='https://cdn.jsdelivr.net/npm/meilisearch@latest/dist/bundles/meilisearch.umd.js'></script>
+<script src="./js/awesomplete.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.0/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

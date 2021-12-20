@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="20 -15 170 155"
+   version="1.1"
+   id="svg1926"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+   sodipodi:docname="internet.svg">
+  <defs
+     id="defs1920">
+    <filter
+       y="-0.15"
+       height="1.3"
+       x="-0.15"
+       width="1.3"
+       inkscape:menu-tooltip="Aquarelle paper effect which can be used for pictures as for objects"
+       inkscape:menu="Textures"
+       inkscape:label="Rough Paper"
+       style="color-interpolation-filters:sRGB;"
+       id="filter2815">
+      <feTurbulence
+         type="fractalNoise"
+         baseFrequency="0.012999999999999999"
+         numOctaves="5"
+         seed="0"
+         result="result4"
+         id="feTurbulence2801" />
+      <feDisplacementMap
+         in="SourceGraphic"
+         in2="result4"
+         yChannelSelector="G"
+         xChannelSelector="R"
+         scale="10"
+         result="result3"
+         id="feDisplacementMap2803" />
+      <feDiffuseLighting
+         lighting-color="rgb(233,230,215)"
+         diffuseConstant="1"
+         surfaceScale="2"
+         result="result1"
+         in="result4"
+         id="feDiffuseLighting2807">
+        <feDistantLight
+           azimuth="235"
+           elevation="40"
+           id="feDistantLight2805" />
+      </feDiffuseLighting>
+      <feComposite
+         operator="in"
+         in="result3"
+         in2="result1"
+         result="result2"
+         id="feComposite2809" />
+      <feComposite
+         in2="result1"
+         result="result5"
+         operator="arithmetic"
+         k1="1.7"
+         id="feComposite2811" />
+      <feBlend
+         in="result5"
+         in2="result3"
+         mode="normal"
+         id="feBlend2813" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter2861"
+       x="-3.6823457e-06"
+       width="1.0000074"
+       y="-6.9960047e-06"
+       height="1.000014">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="5.6571758e-05"
+         id="feGaussianBlur2863" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.54876543"
+     inkscape:cx="396.85039"
+     inkscape:cy="342.58718"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="1252"
+     inkscape:window-height="824"
+     inkscape:window-x="1457"
+     inkscape:window-y="133"
+     inkscape:window-maximized="0"
+     showguides="false" />
+  <metadata
+     id="metadata1923">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.999;fill:#ffffff;fill-opacity:1;stroke:#ff4f4e;stroke-width:1.55343;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2889"
+       width="104.24793"
+       height="20.276489"
+       x="53.06131"
+       y="-7.3391929" />
+    <rect
+       style="opacity:0.999;fill:#000000;fill-opacity:1;stroke:#ff4f4e;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2885"
+       width="162.24937"
+       height="97.429321"
+       x="24.797171"
+       y="3.2887008"
+       rx="32.381313" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       id="text2506"><textPath
+         xlink:href="#path3093"
+         id="textPath3095"><tspan
+           id="tspan2504"
+           style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1">Videos</tspan></textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="text2510"
+       x="0.48214287"
+       y="1.9285715"
+       transform="translate(0,1.9285714)"><textPath
+         xlink:href="#path3088"
+         id="textPath3090"><tspan
+           id="tspan2508"
+           style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Calculus</tspan></textPath></text>
+    <g
+       id="g2559"
+       style="filter:url(#filter2815);stroke:#ffffff;stroke-opacity:1">
+      <circle
+         style="opacity:0.997;fill:#00ff00;stroke:#ffffff;stroke-width:1.112;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;stroke-opacity:1"
+         id="path2502"
+         cx="129.29515"
+         cy="57.708004"
+         r="41.376854" />
+      <circle
+         style="opacity:0.997;fill:#ffff00;stroke:#ffffff;stroke-width:1.30671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+         id="path2500"
+         cx="81.667778"
+         cy="59.168957"
+         r="33.915066" />
+      <path
+         style="fill:#0001ff;stroke:#ffffff;stroke-width:0.26458300000000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+         d="m 99.001125,29.923672 c -6.422783,7.57382 -10.749246,16.47163 -11.103313,27.878323 1.716313,19.943692 7.493517,23.274648 12.564278,29.495591 9.61218,-6.43665 14.91633,-15.992903 15.2461,-29.151296 -1.75231,-16.438325 -8.9723,-22.804607 -16.707065,-28.222618 z"
+         id="path2532"
+         sodipodi:nodetypes="ccccc" />
+      <circle
+         style="opacity:0.997;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.112;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path2502-7"
+         cx="129.44124"
+         cy="57.854095"
+         r="41.376854" />
+      <circle
+         style="opacity:0.997;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.30671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path2500-8"
+         cx="81.455162"
+         cy="59.265652"
+         r="33.915066" />
+    </g>
+    <path
+       sodipodi:type="star"
+       style="opacity:0.997;fill:#ff1f16;fill-opacity:0.944282;stroke:#ff0000;stroke-width:2.55048;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2829"
+       sodipodi:sides="5"
+       sodipodi:cx="101.11675"
+       sodipodi:cy="57.018612"
+       sodipodi:r1="11.915466"
+       sodipodi:r2="5.3955259"
+       sodipodi:arg1="-0.29375177"
+       sodipodi:arg2="0.33456676"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.2"
+       inkscape:randomized="0"
+       d="m 112.52181,53.568544 c 0.47424,1.567721 -5.77088,3.674679 -6.3087,5.221743 -0.53781,1.547064 3.05365,7.073569 1.70921,8.009051 -1.34444,0.935482 -5.27813,-4.352901 -6.91567,-4.386324 -1.637538,-0.03342 -5.783734,5.090048 -7.088885,4.100487 -1.305152,-0.989561 2.508823,-6.364919 2.034583,-7.93264 -0.474241,-1.56772 -6.628195,-3.927747 -6.090381,-5.474811 0.537815,-1.547065 6.828667,0.419164 8.173109,-0.516317 1.344443,-0.935482 1.687285,-7.517529 3.324824,-7.484106 1.63754,0.03342 1.71153,6.623977 3.01668,7.613538 1.30515,0.989561 7.67099,-0.718341 8.14523,0.849379 z"
+       transform="matrix(0.68360564,0,0,0.68297944,33.026993,15.960405)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="105"
+       y="0.58927727"
+       id="text2879"
+       text-anchor="middle"><tspan
+         sodipodi:role="line"
+         id="tspan2877"
+         x="105"
+         y="0.58927727"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.264583">A map of the internet</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="opacity:0.999;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2903"
+       sodipodi:sides="3"
+       sodipodi:cx="102.53354"
+       sodipodi:cy="73.659149"
+       sodipodi:r1="9.5017452"
+       sodipodi:r2="4.7508726"
+       sodipodi:arg1="0.51914611"
+       sodipodi:arg2="1.5663437"
+       inkscape:flatsided="true"
+       inkscape:rounded="-0.05"
+       inkscape:randomized="0"
+       d="m 110.78336,78.373335 c 0.40826,-0.714456 -16.871945,-0.637512 -16.457338,0.07328 0.414606,0.710792 8.988078,-14.29278 8.165208,-14.289116 -0.82287,0.0037 7.88387,14.930293 8.29213,14.215837 z"
+       inkscape:transform-center-x="-0.01053083"
+       inkscape:transform-center-y="-1.836053"
+       transform="matrix(0.53492952,0,0,0.83532491,47.400471,9.0919579)" />
+    <path
+       style="opacity:0.999;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2907"
+       d="m 100.35443,73.954361 c 0.20886,0.62687 0.20123,1.270961 0.15381,1.919743 -0.0556,0.867336 -0.0982,1.728811 -0.24866,2.585241 -0.15814,0.854279 -0.25565,1.718156 -0.406802,2.573218 -0.222729,1.175073 -0.278892,2.370678 -0.335966,3.562411 -0.03963,1.010986 -0.169568,2.021687 -0.314753,3.023333 -0.03735,1.614712 0.05133,3.230086 0.317849,4.823045 0.262803,1.435118 0.766052,2.796323 1.431772,4.088889 0.62912,1.082183 1.55323,1.864873 2.58526,2.540669 1.06276,0.661207 2.09696,1.368 3.08417,2.13747 1.12544,0.84792 1.88705,1.96625 2.53467,3.19564 0.51491,1.19103 0.84456,2.44824 1.1316,3.70994 0.39884,1.67695 0.13507,3.36397 -0.24591,5.01355 -0.41861,1.64548 -1.14204,3.19116 -2.1268,4.57029 -0.63226,0.72516 -1.38551,1.33572 -2.19061,1.85957 -0.31353,0.204 -1.28632,0.76419 -0.96551,0.57185 2.66191,-1.59593 3.27785,-1.85224 1.40402,-0.95717 -1.9806,0.9256 -4.10611,1.40204 -6.261413,1.68521 -2.14117,0.28466 -4.297125,0.0684 -6.422483,-0.23314 -2.232564,-0.35848 -4.429109,-0.9095 -6.584828,-1.58716 -1.362763,-0.4743 -2.700433,-1.02443 -3.979174,-1.69385 -0.219946,-0.16267 -0.537531,-0.25414 -0.692166,-0.49632 0,0 -3.755083,2.25527 -3.755083,2.25527 v 0 c 0.249803,0.26936 0.590568,0.40278 0.913132,0.56751 1.352823,0.64028 2.770167,1.13719 4.174694,1.64979 2.196655,0.60628 4.400023,1.21571 6.645428,1.61346 2.138985,0.33044 4.313428,0.56995 6.476058,0.3311 2.179392,-0.27766 4.340985,-0.68905 6.357015,-1.60218 2.46094,-1.13084 1.1555,-0.49638 5.44853,-2.97236 1.20673,-0.69598 2.33592,-1.54692 3.20938,-2.64048 0.92917,-1.44102 1.64045,-3.02506 2.03394,-4.69836 0.36629,-1.72072 0.55524,-3.46331 0.24601,-5.21291 -0.0687,-0.34032 -0.16925,-0.87529 -0.26549,-1.21376 -0.2496,-0.87777 -0.66723,-1.70694 -0.96297,-2.56869 -0.69143,-1.36451 -1.38286,-2.400432 -2.58538,-3.375083 -0.99827,-0.774467 -2.01473,-1.527585 -3.10925,-2.162627 -0.97331,-0.631971 -1.83624,-1.375884 -2.45821,-2.37149 -0.68021,-1.233371 -1.19481,-2.536354 -1.4373,-3.930917 -0.25372,-1.574829 -0.39073,-3.176458 -0.15055,-4.763944 0.1494,-1.007142 0.23729,-2.026074 0.25982,-3.044082 0.0462,-1.181962 0.14415,-2.362539 0.38326,-3.52312 0.15693,-0.866452 0.3234,-1.731444 0.44693,-2.603233 0.11936,-0.868926 0.143,-1.745091 0.23229,-2.617367 0.048,-0.700648 6e-5,-1.394436 -0.13089,-2.085244 0,0 -3.83944,2.076288 -3.83944,2.076288 z" />
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2847"
+       cx="54.809364"
+       cy="118.05495"
+       rx="26.402708"
+       ry="15.307953" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.75356px;line-height:1.25;font-family:sans-serif;opacity:0.989;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.24384;filter:url(#filter2861)"
+       x="55"
+       y="116.5"
+       id="text2843"
+       text-anchor="middle"><tspan
+         sodipodi:role="line"
+         x="55"
+         y="116.5"
+         style="stroke-width:0.24384"
+         id="tspan2845">You are</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="124.81114"
+       y="41.116543"
+       id="text2875-7"
+       text-decoration="underline"><a
+         id="a3207"
+         href="https://www.youtube.com/watch?v=8fejPrFNK-I"><tspan
+           sodipodi:role="line"
+           id="tspan2873-1"
+           x="124.81114"
+           y="41.116543"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Boxing</tspan></a></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="125.40041"
+       y="88.847672"
+       id="text2875-2"
+       text-decoration="underline"><a
+         id="a3220"
+         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><tspan
+           sodipodi:role="line"
+           id="tspan2873-6"
+           x="125.40041"
+           y="88.847672"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Cats</tspan></a></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="121.57014"
+       y="53.785904"
+       id="text2875-1"
+       text-decoration="underline"><a
+         id="a3198"
+         href="https://www.youtube.com/watch?v=zZDwnk8kZqI"><tspan
+           sodipodi:role="line"
+           id="tspan2873-7"
+           x="121.57014"
+           y="53.785904"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Unboxing</tspan></a></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="118.9184"
+       y="77.651474"
+       id="text2875-6"
+       text-decoration="underline"><a
+         id="a3217"
+         href="https://www.youtube.com/watch?v=1-uvunjOFHc"><tspan
+           sodipodi:role="line"
+           id="tspan2873-5"
+           x="118.9184"
+           y="77.651474"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Minecraft</tspan></a></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="126.93501"
+       y="65.960762"
+       id="text2875-6-6"
+       text-decoration="underline"><a
+         id="a3211"
+         href="https://www.youtube.com/watch?v=9KgCqsawThw"><tspan
+           sodipodi:role="line"
+           id="tspan2873-5-0"
+           x="126.93501"
+           y="65.960762"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Crafts</tspan></a></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="63.607525"
+       y="41.383957"
+       id="text2875-4"
+       text-decoration="underline"><a
+         id="a3223"
+         href="https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx"><tspan
+           sodipodi:role="line"
+           id="tspan2873-3"
+           x="63.607525"
+           y="41.383957"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Notes</tspan></a></text>
+    <path
+       style="fill:none;stroke:none;stroke-width:0.26458300000000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 46.257943,48.909678 C 52.677994,28.925654 64.646463,24.941821 78.962611,22.392383"
+       id="path3088"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:none;stroke-width:0.26458300000000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 134.41203,14.217382 c 16.57975,3.278738 23.90952,9.029011 30.24558,19.391547"
+       id="path3093"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="50.696156"
+       y="54.373764"
+       id="text2875-4-9"
+       text-decoration="underline"><a
+         id="a3226"
+         href="https://web.pdx.edu/~erdman/CALCULUS/CALCULUS_pdf.pdf"><tspan
+           sodipodi:role="line"
+           id="tspan2873-3-0"
+           x="50.696156"
+           y="54.373764"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Questions</tspan></a></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="54.172554"
+       y="66.942276"
+       id="text2875-4-0"
+       text-decoration="underline"><a
+         id="a3229"
+         href="https://www.wolframalpha.com/examples/mathematics/calculus-and-analysis/"><tspan
+           sodipodi:role="line"
+           id="tspan2873-3-03"
+           x="54.172554"
+           y="66.942276"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Answers</tspan></a></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="66.975052"
+       y="79.250954"
+       id="text2875-4-0-6"
+       text-decoration="underline"><a
+         id="a3232"
+         href="https://media.giphy.com/media/l2YWF00ZX8wOs0p0s/giphy.gif"><tspan
+           sodipodi:role="line"
+           id="tspan2873-3-03-1"
+           x="66.975052"
+           y="79.250954"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Gifs</tspan></a></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.998;fill:#0000c3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="116.49108"
+       y="29.020475"
+       id="text2875-2-9"
+       text-decoration="underline"><a
+         id="a3214"
+         href="https://www.youtube.com/watch?v=a_IA-8nQ4FY"><tspan
+           sodipodi:role="line"
+           id="tspan2873-6-6"
+           x="116.49108"
+           y="29.020475"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000c3;fill-opacity:1;stroke-width:0.264583">Cats</tspan></a></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="55"
+       y="127.82449"
+       id="text3205"
+       text-anchor="middle"><tspan
+         sodipodi:role="line"
+         id="tspan3203"
+         x="55"
+         y="127.82449"
+         style="stroke-width:0.264583">Here</tspan></text>
+  </g>
+</svg>
