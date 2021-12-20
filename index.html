@@ -14,7 +14,7 @@
 </head>
 <body >
 <header class="bg-gray-100 border-b sm:fixed sm:w-full sm:top-0 sm:left-0 sm:z-40 sm:h-10">
-	<div class="container px-2 py-2 mx-auto">
+	<div class="container max-w-6xl px-2 py-2 mx-auto">
 		<a href="./index.html"><img style="display:inline-block;" class="sm:w-48" src="./img/logo.png" alt="Calculus Videos Logo" /></a>
 		<button class="float-right mx-0 border border-black px-2 bg-green-100 text-black"><a href="./help.html">Help</a></button>
 		<button class="float-right mx-1 border border-black px-2 bg-yellow-100 text-black"><a href="./playlist.html">Playlists</a></button>
@@ -22,7 +22,7 @@
 </header>
 
 <main class="flex-1 sm:mt-12">
-	<div class="container mx-auto">
+	<div class="container max-w-6xl mx-auto">
 		<div class="w-full ">
 			<div class="relative mx-auto w-full">
 				<div class="border-b w-full">
@@ -62,7 +62,7 @@
 		</div>
 		<div id="browse" class="w-full flex">
 			<div class="w-1/2 mt-2">
-			<object class="w-full" data="./img/internet.svg" type="image/svg+xml"></object>
+			<object class="w-full mx-auto max-w-2xl" data="./img/internet.svg" type="image/svg+xml"></object>
 
 			</div>
 			<div class="w-1/2 mt-2">
@@ -76,7 +76,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="results" class="w-full border-b pt-4" style="display: none;">
+		<div id="results" class="w-full border-b pt-2" style="display: none;">
 			
 		</div>
 		<template id="result">
@@ -93,7 +93,7 @@
 					<div class="w-1/4 border-b max-h-36 overflow-auto px-2">
 						<div class="w-full">
 							<button style="display:none;" class="border border-black px-2 bg-green-100" onclick="addToPlaylist()" name="mid"></button>
-							<div name="source"><span class="titleLink"></span></div>
+							<div name="source"><span class="titleLink text-blue-600 underline hover:text-blue-800"></span></div>
 							<div>Time: <span name="length"></span>, Cap: <span name="cap">N</span></div>
 							<!--<div><span name="score"></span></div>-->
 							<div><span name="class"></span></div>

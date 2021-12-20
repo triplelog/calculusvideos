@@ -25,7 +25,7 @@ object * {
 </header>
 
 <main class="flex-1 sm:mt-12">
-	<div class="w-full px-8 lg:px-0 lg:container mx-auto flex">
+	<div class="w-full px-8 lg:px-0 max-w-7xl lg:container mx-auto flex">
 		<div id="sthree" class="w-2/3 px-2">
 			<div class="w-full ">
 				<div class="relative mx-auto w-full">
@@ -74,11 +74,15 @@ object * {
 							<li>Click the button with the video ID in the top right of each result.</li>
 							<li>Rearrange videos as needed.</li>
 							<li>Modify the template to your liking.</li>
+							<li>Copy the raw HTML and paste to your website.</li>
+							<li>Styling will depend on your stylesheets.</li>
+							<li>If you want to edit titles, it is easiest to do that after you have pasted it elsewhere.</li>
+							<li>If creating markdown, click the render MD checkbox to preview the rendered markdown.</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div id="results" class="w-full border-b pt-4" style="display: none;">
+			<div id="results" class="w-full border-b pt-2" style="display: none;">
 			
 			</div>
 			<template id="result">
@@ -95,7 +99,7 @@ object * {
 						<div class="w-1/4 border-b max-h-36 overflow-auto px-2">
 							<div class="w-full">
 								<button class="border border-black px-2 bg-green-100" onclick="addToPlaylist()" name="mid"></button>
-								<div name="source"><span class="titleLink"></span></div>
+								<div name="source"><span class="titleLink text-blue-600 underline hover:text-blue-800"></span></div>
 								<div>Time: <span name="length"></span>, Cap: <span name="cap">N</span></div>
 								<!--<div><span name="score"></span></div>-->
 								<div><span name="class"></span></div>
@@ -136,16 +140,15 @@ object * {
 				<div class="w-full">
 					<textarea id="templateTA" class="w-full border border-black p-1" rows="8"></textarea>
 				</div>
-				<button class="border border-black px-2" onclick="updateTemplate()">Update Template</button>
-				<button class="">Raw Output (Copy or see/edit)</button>
-				<button class="">Save/Load (download/upload or save to browser)</button>
-				<select>
-					<option disabled>Defaults</option>
-					<option>List</option>
-					<option>Divs</option>
-					<option>Flex</option>
-					<option>Markdown</option>
+				<button class="border border-black px-2" id="rawOutput">Raw Output</button>
+				<!--<button class="border border-black px-2">Save/Load(download/upload or save to browser)</button>-->
+				<select id="defaultTemplate">
+					<option value="" disabled selected>Choose a Default...</option>
+					<option value="list">List</option>
+					<option value="divs">Divs</option>
+					<option value="markdown">Markdown</option>
 				</select>
+				Render MD: <input id="renderMD" type="checkbox" />
 			</div>
 		</div>
     </div>
@@ -160,6 +163,8 @@ object * {
 <script src='https://cdn.jsdelivr.net/npm/meilisearch@latest/dist/bundles/meilisearch.umd.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.0/umd/popper.min.js"></script>
 <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<script type="text/javascript" src="./js/purify.min.js"></script>
+<script src="https://unpkg.com/snarkdown@2.0.0/dist/snarkdown.umd.js"></script>
 <script src="./js/awesomplete.min.js"></script>
 <script src="./js/playlist.js"></script>
 <script src="./js/main.js"></script>

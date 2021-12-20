@@ -513,12 +513,12 @@ function excludeTopic(topic){
 
 var savedHits = {};
 function hitToHTML(hit){
-	if (savedHits[hit.id]){
+	/*if (savedHits[hit.id]){
 		var clone = savedHits[hit.id].firstElementChild;
 		savedHits[hit.id] = savedHits[hit.id].cloneNode(true);
 		resultsEl.appendChild(clone);
 		return;
-	}
+	}*/
 	var temp = document.getElementById("result");
 	var clone = temp.content.cloneNode(true);
 	clone.querySelectorAll("a[name=link]").forEach( el => el.setAttribute('href',hit.url));
@@ -633,7 +633,7 @@ function hitToHTML(hit){
 	clone.querySelector("*[name=mid]").setAttribute("onclick","addToPlaylist('"+hit.id+"')");
 	//clone.querySelector("*[name=score]").textContent = Math.round(hit.value*100);
 	
-	savedHits[hit.id] = clone.cloneNode(true);
+	//savedHits[hit.id] = clone.cloneNode(true);
 	if (playlistInfo && playlistInfo['save']){
 		playlistInfo[hit.id]=hit;
 	}
