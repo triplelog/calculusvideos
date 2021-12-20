@@ -9,7 +9,11 @@
   <link href="./css/awesomplete.css" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet">
 
-
+<style>
+object * {
+	pointer-events: none;
+}
+</style>
 </head>
 <body >
 <header class="bg-gray-100 border-b sm:fixed sm:w-full sm:top-0 sm:left-0 sm:z-40 sm:h-10">
@@ -122,23 +126,27 @@
 			</template>
 		</div>
 		<div id="pone" class="w-1/3 px-2">
-			<h1 class="text-3xl text-center">Playlist (<object class="w-8" data="./img/eye-off.svg" type="image/svg+xml">></object>,normal,max)</h1>
+			<h1 class="text-3xl text-center">Playlist <img onclick="hidePlaylist()" class="w-6 border border-black p-1 mx-0.5 inline-block" src="./img/eye-off.svg" alt="hide" /><img onclick="minPlaylist()" class="w-6 border border-black p-1 mx-0.5 inline-block" src="./img/minimize-2.svg" alt="min"/><img onclick="maxPlaylist()" class="w-6 border border-black p-1 mx-0.5 inline-block" src="./img/maximize-2.svg" alt="max" /></h1> 
 			<div class="w-full" id="playlist">
 			</div>
-			<h1 class="text-3xl text-center">Template</h1>
-			<div class="w-full">
-				<textarea id="templateTA" class="w-full border border-black p-1" rows="8"></textarea>
+			<div class="w-full hidden" id="playlistSmall">
 			</div>
-			<button class="border border-black px-2" onclick="updateTemplate()">Update Template</button>
-			<button class="">Raw Output (Copy or see/edit)</button>
-			<button class="">Save/Load (download/upload or save to browser)</button>
-			<select>
-				<option disabled>Defaults</option>
-				<option>List</option>
-				<option>Divs</option>
-				<option>Flex</option>
-				<option>Markdown</option>
-			</select>
+			<div class="w-full" id="templateDiv">
+				<h1 class="text-3xl text-center">Template</h1>
+				<div class="w-full">
+					<textarea id="templateTA" class="w-full border border-black p-1" rows="8"></textarea>
+				</div>
+				<button class="border border-black px-2" onclick="updateTemplate()">Update Template</button>
+				<button class="">Raw Output (Copy or see/edit)</button>
+				<button class="">Save/Load (download/upload or save to browser)</button>
+				<select>
+					<option disabled>Defaults</option>
+					<option>List</option>
+					<option>Divs</option>
+					<option>Flex</option>
+					<option>Markdown</option>
+				</select>
+			</div>
 		</div>
     </div>
 </main>        
