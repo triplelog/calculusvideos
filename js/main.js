@@ -337,29 +337,34 @@ function chgSearch(){
 		}, 30)
 	}
 }
-function sendSearch(term="",limit=20){
+
+var rpp = 20;
+function sendSearch(term="",limit=rpp){
 	if (term == ""){
 		term = searchEl.value;
 	}
 	if (filters.length > 0){
 		client.index('videos').search(term, {
 			filter: filters,
-			limit: limit
+			limit: rpp,
+			offset: limit-rpp
 		}).then((res) => gotResult(res));
 	}
 	else {
 		//console.log(Date.now());
 		client.index('videos').search(term, {
-			limit: limit
+			limit: rpp,
+			offset: limit-rpp
 		}).then((res) => gotResult(res));
 	}
 	currentLimit = limit;
 }
-var currentLimit = 20;
+var currentLimit = rpp;
 function moreResults(){
-	currentLimit += 20;
+	currentLimit += rpp;
 	sendSearch("",currentLimit);
 }
+var sourceCount = {};
 function gotResult(res){
 
 	if (!res){
@@ -367,17 +372,46 @@ function gotResult(res){
 	}
 	browseEl.style.display = "none";
 	resultsEl.style.display = "block";
-	while (resultsEl.firstChild) {
-        resultsEl.removeChild(resultsEl.firstChild);
+	if (currentLimit == rpp){
+		//clear results
+		while (resultsEl.firstChild) {
+			resultsEl.removeChild(resultsEl.firstChild);
+		}
+		sourceCount = {};
     }
-	//resultsEl.innerHTML = "";
+    else {
+    	//just remove the load more results element
+    	resultsEl.removeChild(resultsEl.lastChild);
+    }
+
 	var hits = res.hits;
 	if (hits.length > 0){
-		//console.log(hits[0]);
+		for (var i=0;i<hits.length;i++){
+			hits[i].rank = i*4 - parseFloat(hits[i].value);
+			
+		}
+		hits.sort((a,b) => { return a.rank - b.rank});
+		for (var i=0;i<hits.length;i++){
+			if (sourceCount[hits[i].source[0]]){
+				
+				hits[i].rank = i + 1.8*Math.pow(sourceCount[hits[i].source[0]],1.5);
+				sourceCount[hits[i].source[0]]++;
+				
+			}
+			else {
+				hits[i].rank = i;
+				sourceCount[hits[i].source[0]]=1;
+			}
+			//hitToHTML(hits[i]);
+			
+		}
+	}
+	hits.sort((a,b) => { return a.rank - b.rank});
+	if (hits.length > 0){
 		for (var i=0;i<hits.length;i++){
 			hitToHTML(hits[i]);
 		}
-		if (hits.length < currentLimit){
+		if (hits.length < rpp){
 			//add no more results
 			var div = document.createElement("div");
 			div.classList.add("w-full");
@@ -625,6 +659,7 @@ function hitToHTML(hit){
 			});
 			div.appendChild(span);
 		}
+		//div.innerHTML += hit.views +", "+hit.likes+", "+hit.comments+", "+hit.value;
 	}
 	
 	
