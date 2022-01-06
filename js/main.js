@@ -662,15 +662,21 @@ function hitToHTML(hit){
 		//div.innerHTML += hit.views +", "+hit.likes+", "+hit.comments+", "+hit.value;
 	}
 	
+	//clone.querySelector("*[name=score]").textContent = Math.round(hit.value*100);
 	
 	
 	clone.querySelector("*[name=mid]").textContent = hit.id;
 	clone.querySelector("*[name=mid]").setAttribute("onclick","addToPlaylist('"+hit.id+"')");
-	//clone.querySelector("*[name=score]").textContent = Math.round(hit.value*100);
+	
 	
 	//savedHits[hit.id] = clone.cloneNode(true);
 	if (playlistInfo && playlistInfo['save']){
 		playlistInfo[hit.id]=hit;
+		if (cpids[hit.id] || cpids[hit.id] === 0){
+			clone.querySelector("*[name=mid]").classList.remove("bg-green-100");
+			clone.querySelector("*[name=mid]").classList.add("bg-red-100");
+			clone.querySelector("*[name=mid]").setAttribute("onclick","removeFromPlaylist('"+hit.id+"')");
+		}
 	}
 	resultsEl.appendChild(clone);
 	
