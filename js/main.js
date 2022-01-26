@@ -311,7 +311,7 @@ function shFilters(){
 
 const client = new MeiliSearch({
 	host: 'https://search.calculusvideos.com:7700',
-	apiKey: '8a241d6dbb3b100aa0e45dea65afd69d510db7d9ec252f944ce25cd2f01db346'
+	apiKey: 'l3ZMQKOg51360e5c767f47db28d8e95f046c2107c2b0f04631d703d7858b324485bed2b9'
 })
 
 var searchEl = document.getElementById('search');
