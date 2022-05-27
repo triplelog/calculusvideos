@@ -310,7 +310,7 @@ function shFilters(){
 }
 
 const client = new MeiliSearch({
-	host: 'https://search.calculusvideos.com:7700',
+	host: 'https://search2.calculusvideos.com:7700',
 	apiKey: 'l3ZMQKOg51360e5c767f47db28d8e95f046c2107c2b0f04631d703d7858b324485bed2b9'
 })
 
